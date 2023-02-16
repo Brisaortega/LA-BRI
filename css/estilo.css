@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 65.5%;
+}
+
+.botonWpp{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10rem;
+    height: 5rem;
+    width: 15rem;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-right: 4rem;
+
+}
+.botonWpp:hover{
+    height: 5rem;
+    width: 15rem;
+    background-color:green;
+}
+
+.formFormulario2{
+	width:20%;
+	padding:1rem;
+	border-radius:1rem;
+	margin:auto;
+	background-color: red;
+}
+
+form label{
+	width:40%;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:60%;
+	padding:2% 20%;
+	border:1% solid #f6f6f6;
+	border-radius:1%;
+	background-color:#f6f6f6;
+	margin:5% 0;
+	display:inline-block;
+}
+
+input:focus{
+    width: 40%;
+    height: 8%;
+    transition: all 2s; 
+   
+}
+.Encabezado {
+    background-color: red;
+    padding:8%;
+    height: 12rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.Encabezado img {
+    width: 10%;
+    height: 10%;
+}
+
+.ajustes img {
+    padding: 6rem;
+}
+
+.body {
+    background-color: #fff;
+}
+
+.informacionfooter {
+   background-color: red;
+    color: black;
+    height: 6rem;
+    width: 1 rem;
+    font-size: 1rem;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    grid-area: footer;
+}
+.footer p{
+background-color: red;
+    color: black;
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.redesSociales {
+    background-color: red;
+    color: black;
+    height: 6rem;
+    width: 1 rem;
+    font-size: 1rem;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+h4{
+    
+    color: black;
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.botonenviar {
+    background-color: blue;
+    color: white;
+    font-size: 2vh;
+}
+
+.contacto {
+    background-color: #fff;
+    font-size: 2vh;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10rem;
+    color: black;
+    font-size: 1.7rem;
+    padding: 4vh;
+    margin: 2vh;
+
+}
+
+h3 {
+    background-color: red;
+    color: black;
+    font-size: 10%;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    display: inline-flexbox;
+    text-align: center;
+    margin: 1rem;
+
+}
+
+h2 {
+    background-color: red;
+    color: black;
+    font-size: 5rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 10%;
+    text-align: center;
+    font-weight: bold;
+    display: inline-flexbox;
+    margin: 1rem;
+
+}
+
+.parrafo2 {
+    color: black;
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.productos {
+    display: flex;
+    margin-right: 10px;
+}
+
+.productos queso {
+    max-width: 40%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin: auto;
+}
+
+.productos salame {
+    max-width: 40%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin: auto;
+}
+
+.productos dulces {
+    max-width: 40%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    margin: auto;
+}
+
+.map-responsive {
+
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 40%;
+
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+.listadopreguntas {
+    text-align: start;
+    font-size: 2rem;
+    list-style: none;
+    margin: 2rem;
+}
+.productos img{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    background-color: red;
+    color: black;
+    font-size: 5rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 10%;
+    text-align: center;
+    font-weight: bold;
+    display: inline-flexbox;
+    margin: 1rem;
+
+}
+@media(min-width:0px) and (max-widht:768px){
+    .body {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+       grid-template-columns: 100%;
+       
+    }
+}
+
+@media(min-width:768px) {
+    .body {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer ";
+        gap: 5rem;
+
+    }
+}
+
+@media(min-width:1024px) {
+    .body {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer ";
+
+    }
+}
